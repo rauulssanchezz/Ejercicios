@@ -18,6 +18,8 @@ fun main(){
     informacionPersonal(nombre,edad,"Granada")
 
     //Ejercicio5
+    println(conversionFahrenheit(27))
+    println(conversionCelsius(370))
 }
 //Ejercicio3
 fun saludar(nombre:String,edad:Int){
@@ -29,9 +31,13 @@ fun informacionPersonal(nombre:String,edad:Int,ciudad:String){
     println("nombre: "+nombre+ " edad: "+edad+" ciudad: "+ciudad)
 }
 //Ejercicio5
-fun conversionFahrenheit(grados:Int){
-
+fun conversionFahrenheit(grados:Int): Int {
+    var res=0
+    res=grados*(9/5)+32
+    return res
 }
-fun conversionCelsius(grados:Int){
-
+fun conversionCelsius(grados:Int): Int {
+    var res=0
+    res=(grados -32)*5/9
+    return res
 }
